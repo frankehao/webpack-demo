@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && webpack ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@webpack-cli/serve": "^1.6.1",
     "css-loader": "^3.2.0",
     "dart-sass": "^1.23.7",
     "file-loader": "^5.0.2",
