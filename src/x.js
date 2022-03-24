@@ -1,1 +1,2 @@
-import './x.css'
+import './x.scss'
+import './y.less'
