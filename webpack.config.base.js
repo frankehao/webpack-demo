@@ -15,6 +15,28 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
+        test: /\.styl$/i,
+        use: ['style-loader', 'css-loader', 'stylus-loader'],
+      },
+      {
+        test: /\.less$/i,
+        use: [
+          // compiles Less to CSS
+          'style-loader',
+          'css-loader',
+          'less-loader',
+        ],
+      },
+
+      {
         test: /\.scss$/i,
         use: [
           // Creates `style` nodes from JS strings
